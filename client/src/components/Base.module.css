@@ -1,18 +1,33 @@
-.button_common {
-    background-color: olivedrab;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    font-size: 22px;
-    border-radius: 15px;
-    margin: 1rem;
-    width: 90%;
-}
-
 .error {
     color: red;
-    text-align: left;
-    margin: auto;
-    font-size: 16px;
-    padding: 0px 1rem;
-}
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .button_common {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button_common:hover {
+    background-color: var(--button-hover-bg);
+  }
+  
+  /* Add CSS variables for themes */
+  :root {
+    --button-bg: #6B8096;
+    --button-text: #FFF;
+    --button-hover-bg: #5a6d7b;
+  }
+  
+  [data-theme="dark"] {
+    --button-bg: #999;
+    --button-text: #000;
+    --button-hover-bg: #7a7a7a;
+  }
+  

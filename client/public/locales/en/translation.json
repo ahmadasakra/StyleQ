@@ -1,0 +1,52 @@
+{
+  "home": "Home",
+  "services": "Services",
+  "portfolio": "Portfolio",
+  "about": "About Us",
+  "contact": "Contact",
+  "changeLanguage": "Change Language",
+  "ourServices": "Our Services",
+  "signup": {
+    "createAccount": "Create your account",
+    "name": "Name",
+    "email": "Email",
+    "address": "Address",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "phone": "Phone",
+    "register": "Register",
+    "alreadyRegistered": "Already registered? Login",
+    "nameRequired": "Name is required",
+    "emailRequired": "Email is required",
+    "emailInvalid": "This is not a valid email format!",
+    "addressRequired": "Address is required",
+    "passwordRequired": "Password is required",
+    "passwordMinLength": "Password must be more than 5 characters",
+    "confirmPasswordRequired": "Confirm Password is required",
+    "passwordMismatch": "Confirm password and password should be the same",
+    "phoneRequired": "Phone number is required",
+    "phoneInvalid": "Phone number must be at least 10 digits"
+  },
+  "about1": {
+    "title": "About Us",
+    "content": "Welcome to our company. We provide the best services to help you achieve your goals. Our team is dedicated to offering top-notch solutions tailored to your needs. With years of experience in the industry, we guarantee satisfaction and excellence in everything we do.",
+    "team": "Our Team",
+    "teamMembers": [
+      {
+        "name": "John Doe",
+        "position": "CEO",
+        "description": "John is the CEO and has over 20 years of experience in the industry."
+      },
+      {
+        "name": "Jane Smith",
+        "position": "CTO",
+        "description": "Jane is the CTO and leads the technology department with her innovative vision."
+      },
+      {
+        "name": "Mike Brown",
+        "position": "COO",
+        "description": "Mike is the COO, ensuring all operations run smoothly and efficiently."
+      }
+    ]
+  }
+}

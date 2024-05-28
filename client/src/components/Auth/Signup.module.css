@@ -1,21 +1,44 @@
 .register {
-    width: 400px;
-    background: #fff;
-    border: 1px solid #dddfe2;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-    border-radius: 8px;
-    padding: 1rem;
-    align-items: center;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--form-bg);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register h1 {
+    margin-bottom: 20px;
     text-align: center;
-}
-
-.register>form input {
-    border-radius: 20px;
-    border: 2px solid lightgrey;
+  }
+  
+  .register input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+  }
+  
+  .register input:focus {
+    border-color: var(--input-focus-border);
     outline: none;
-    color: #1d2129;
-    margin: 2% 0;
-    width: 90%;
-    padding: 12px;
-    font-size: 16px;
-}
+  }
+  
+  /* Add CSS variables for themes */
+  :root {
+    --form-bg: #f9f9f9;
+    --input-border: #ccc;
+    --input-focus-border: #6B8096;
+  }
+  
+  [data-theme="dark"] {
+    --form-bg: #3b3b3b;
+    --input-border: #555;
+    --input-focus-border: #999;
+  }
+  

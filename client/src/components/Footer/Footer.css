@@ -1,0 +1,49 @@
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 20px 30px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-content p {
+    margin: 0;
+  }
+  
+  footer nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer nav ul li {
+    margin-right: 20px;
+  }
+  
+  footer nav ul li a {
+    color: var(--footer-text);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  footer nav ul li a:hover {
+    color: var(--highlight-color);
+  }
+  
+  /* Add CSS variables for themes */
+  :root {
+    --footer-bg: #f0f0f0;
+    --footer-text: #000;
+  }
+  
+  [data-theme="dark"] {
+    --footer-bg: #4a4a4a;
+    --footer-text: #f0f0f0;
+  }
+  

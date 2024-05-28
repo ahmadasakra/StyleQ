@@ -1,0 +1,52 @@
+{
+  "home": "Startseite",
+  "services": "Dienstleistungen",
+  "portfolio": "Portfolio",
+  "about": "Über uns",
+  "contact": "Kontakt",
+  "changeLanguage": "Sprache ändern",
+  "ourServices": "Unsere Dienstleistungen",
+  "signup": {
+    "createAccount": "Erstellen Sie Ihr Konto",
+    "name": "Name",
+    "email": "E-Mail",
+    "address": "Adresse",
+    "password": "Passwort",
+    "confirmPassword": "Passwort bestätigen",
+    "phone": "Telefon",
+    "register": "Registrieren",
+    "alreadyRegistered": "Bereits registriert? Anmelden",
+    "nameRequired": "Name ist erforderlich",
+    "emailRequired": "E-Mail ist erforderlich",
+    "emailInvalid": "Dies ist kein gültiges E-Mail-Format!",
+    "addressRequired": "Adresse ist erforderlich",
+    "passwordRequired": "Passwort ist erforderlich",
+    "passwordMinLength": "Passwort muss mehr als 5 Zeichen lang sein",
+    "confirmPasswordRequired": "Passwort bestätigen ist erforderlich",
+    "passwordMismatch": "Passwort und Passwort bestätigen müssen übereinstimmen",
+    "phoneRequired": "Telefonnummer ist erforderlich",
+    "phoneInvalid": "Telefonnummer muss mindestens 10 Ziffern lang sein"
+  },
+  "about1": {
+    "title": "Über uns",
+    "content": "Willkommen in unserem Unternehmen. Wir bieten die besten Dienstleistungen, um Ihnen zu helfen, Ihre Ziele zu erreichen. Unser Team ist darauf spezialisiert, erstklassige Lösungen zu bieten, die auf Ihre Bedürfnisse zugeschnitten sind. Mit jahrelanger Erfahrung in der Branche garantieren wir Zufriedenheit und Exzellenz in allem, was wir tun.",
+    "team": "Unser Team",
+    "teamMembers": [
+      {
+        "name": "John Doe",
+        "position": "CEO",
+        "description": "John ist der CEO und hat über 20 Jahre Erfahrung in der Branche."
+      },
+      {
+        "name": "Jane Smith",
+        "position": "CTO",
+        "description": "Jane ist die CTO und leitet die Technologieabteilung mit ihrer innovativen Vision."
+      },
+      {
+        "name": "Mike Brown",
+        "position": "COO",
+        "description": "Mike ist der COO und sorgt dafür, dass alle Abläufe reibungslos und effizient verlaufen."
+      }
+    ]
+  }
+}

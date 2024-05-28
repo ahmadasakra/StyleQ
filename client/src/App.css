@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+/* src/App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 15px 30px;
+  background-color: var(--body-bg);
+  color: var(--text-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--highlight-color);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.actions button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  background: var(--highlight-color);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.actions button:hover {
+  background: var(--text-color);
+  color: var(--body-bg);
+}
+
+/* Add CSS variables for themes */
+:root {
+  --body-bg: #FFF;
+  --text-color: #000;
+  --highlight-color: #6B8096;
+}
+
+[data-theme="dark"] {
+  --body-bg: #363537;
+  --text-color: #FAFAFA;
+  --highlight-color: #999;
 }

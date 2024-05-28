@@ -1,0 +1,79 @@
+.services-slider {
+  padding: 20px;
+  background: var(--body-bg);
+  color: var(--text-color);
+}
+
+.services-slider h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.slide {
+  background: var(--slide-bg);
+  color: var(--slide-text);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.slide p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Slick slider overrides */
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.slick-prev, .slick-next {
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  background-color: var(--arrow-bg);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.slick-prev::before, .slick-next::before {
+  font-size: 20px; /* Adjust size as needed */
+  color: var(--arrow-color);
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background-color: var(--arrow-hover-bg);
+}
+
+/* Light (Hell) Mode Arrows */
+:root {
+  --slide-bg: #f0f0f0;
+  --slide-text: #000;
+  --arrow-color: #000; /* Dark arrows for light mode */
+  --arrow-bg: rgba(255, 255, 255, 0.7); /* Semi-transparent light background */
+  --arrow-hover-bg: rgba(255, 255, 255, 1); /* Solid light background on hover */
+}
+
+/* Dark Mode Arrows */
+[data-theme="dark"] {
+  --slide-bg: #4a4a4a;
+  --slide-text: #f0f0f0;
+  --arrow-color: #f0f0f0; /* Light arrows for dark mode */
+  --arrow-bg: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+  --arrow-hover-bg: rgba(0, 0, 0, 1); /* Solid dark background on hover */
+}
