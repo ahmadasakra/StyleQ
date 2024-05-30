@@ -24,6 +24,7 @@ const Header = ({ toggleTheme, theme }) => {
           <li><Link to="/about">{t('about')}</Link></li>
           <li><Link to="/contact">{t('contact')}</Link></li>
           <li><Link to="/signup">{t('Signup')}</Link></li>
+          <li><Link to="/appointment">{t('appointment')}</Link></li>
         </ul>
       </nav>
       <div className="actions">

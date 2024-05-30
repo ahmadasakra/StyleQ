@@ -27,6 +27,10 @@ app.get('/', (req, res) => {
 app.use(`/${apikey}/api/admin`, require('./routes/admin/adminLogin'));
 app.use(`/${apikey}/api/auth`, require('./routes/auth'));
 
+
+app.use(`/${apikey}/appointment`, require('./routes/auth'));
+
+
 // Catch-all handler to serve the React app for any other routes
 app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));

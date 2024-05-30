@@ -5,6 +5,7 @@ import Login from './components/Auth/Login';
 import HomePage from './components/HomePage';
 import About from './components/About/About';
 import NotFound from './components/NotFound/NotFound';
+import Appointment from './components/Appointment/Appointment';
 
 import Admin from './admin/Admin';
 import { Provider } from 'react-redux';
@@ -17,6 +18,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/appointment" element={<Appointment />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/about" element={<About />} />
