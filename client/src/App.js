@@ -6,6 +6,9 @@ import HomePage from './components/HomePage';
 import About from './components/About/About';
 import NotFound from './components/NotFound/NotFound';
 import Appointment from './components/Appointment/Appointment';
+import Confirmation from './components/Appointment/Confirmation/Confirmation';
+import ContactDetails from './components/Appointment/ContactDetails/ContactDetails';
+
 
 import Admin from './admin/Admin';
 import { Provider } from 'react-redux';
@@ -19,6 +22,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/appointment" element={<Appointment />} />
+          <Route path="/confirmation" element={<Confirmation />} />
+          <Route path="/ContactDetails" element={<ContactDetails />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/about" element={<About />} />

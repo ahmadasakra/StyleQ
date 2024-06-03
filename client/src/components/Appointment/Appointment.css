@@ -1,0 +1,248 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.appointment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.header, .footer {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #333;
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.calendar-container label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+#appointment-date {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.summary-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #fafafa;
+    width: 100%;
+}
+
+.summary-container h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.summary-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.summary-container li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+button:not(:disabled):hover {
+    background-color: #0056b3;
+}
+
+/* Time Slot Popup */
+.time-slot-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.popup-header h2 {
+    margin: 0;
+    color: #333;
+}
+
+.popup-header button {
+    background-color: transparent;
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.time-slot {
+    padding: 10px 15px;
+    border: 1px solid #ffffff;
+    background-color: #29bd1c;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 10px; /* Füge einen Abstand zwischen den Zeit-Schaltflächen hinzu */
+    margin-bottom: 10px; /* Füge einen Abstand zwischen den Zeit-Schaltflächen hinzu */
+}
+
+.time-slot:hover, .time-slot.selected {
+    background-color: #01eb34;
+    color: rgb(255, 255, 255);
+}
+
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.appointment-container {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #333;
+}
+
+.calendar-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendar-container label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.month-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.day:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.summary-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.summary-container h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.summary-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.summary-container li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
