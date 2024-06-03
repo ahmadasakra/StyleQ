@@ -1,0 +1,70 @@
+/* Confirmation.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.confirmation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.confirmation-container h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.confirmation-container p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.appointment-summary {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fafafa;
+    width: 100%;
+}
+
+.appointment-summary h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.appointment-summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.appointment-summary li {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 16px;
+}
+
+.appointment-summary li strong {
+    color: #333;
+}
+
+.redirect-link {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.redirect-link:hover {
+    color: #0056b3;
+}
